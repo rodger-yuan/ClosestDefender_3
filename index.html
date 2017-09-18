@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>3FG% vs. Distance From Closest Defender</title> 
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <style>
+
+        	#graph-container {
+        		height: 525px;
+        		width: 905px;
+        		margin-top: 10px;
+        		margin: auto;
+        		position: relative;
+        	}
+
+        	#scatter {
+        		width: 900px;
+        		height: 520px;
+        		display: inline-block;
+        	}
+
+        </style>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://unpkg.com/d3fc/build/d3fc.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="nbachart.css">
+    </head>
+    <body>
+        <div>
+            <div class="title">
+                <h2>Who Really Get the Pipe? Finding the Real JR Smith</h2>
+            </div>
+            <div class="subtitle">
+                <h3>by <a href="https://github.com/rodger-yuan">rodger yuan</a></h3>
+                <div class = "toggle">
+                    <h3> <small>JR Smith Toggle </small></h3>
+                    <label class="switch" id="switch">
+                      <input type="checkbox">
+                      <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div id="graph-container">
+            	<ul>
+            		<li>A graph showing 3FG% vs. distance from closest defender</li>
+            		<li>Includes the players with the top 50 3FGA for each year, plus JR Smith</li>
+            		<li><u>JR Smith Shot Selection:</u> Over 40% of 3PA are with a defender between 0-4 feet away</li>
+            		<li><u>JR Smith Confidence:</u> Has a higher 3PFG% from 0-4 feet away than when open</li>
+            		<li><u>More JR than JR:</u> Has both JR Smith Shot Selection AND JR Smith Confidence (Check out Nick Young from 2013-14)</li>
+                    <li>Hover over points to see shot fruencies from each defender distance</li>
+            	</ul>
+            	<div>
+		            <div class = "select-style">
+			            <select id="year">
+			                <option value="2016-17">2016-2017</option>
+			                <option value="2015-16">2015-2016</option>
+			                <option value="2014-15">2014-2015</option>
+			                <option value="2013-14">2013-2014</option>
+			            </select>
+		            <span></span>
+		            </div>
+		            <div class = "select-style">
+			            <select id="player"></select>
+		            <span></span>
+		            </div>
+		        </div>
+            	<div id="scatter"></div>
+            </div>
+            <script src="code/js/main.js"></script>
+        </div>    
+    </body>
+</html>

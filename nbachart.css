@@ -1,0 +1,170 @@
+p {
+    font-family: 'Abel', san-serif;
+    font-size: 25px;
+    color: black;
+}
+
+ul {
+    font-family: 'Abel', san-serif;
+    font-size: 12pt;
+}
+
+h2 {
+    font-family: 'Abel', san-serif;
+    font-size: 40px;
+    margin-top:20px;
+    color: black;
+}
+
+h3 {
+    font-family: 'Abel', san-serif;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    color: black;
+}
+
+hr {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 0px;
+	border-width: 2px;
+	border-color: black;
+}
+
+text {
+    font-family: "Abel", sans-serif; 
+}
+
+div.tooltip {        
+    position: absolute;  
+    text-align: center;        
+    width: auto;                    
+    height: auto;                   
+    padding: 2px;               
+    font-size: 15px;    
+    font-weight: 700;
+    font-family: "Abel", sans-serif; 
+    color: white;
+    background: black; 
+    border: 0px;                
+    pointer-events: none;         
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 50px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.select-style {
+    background: #FFF;
+    overflow: hidden;
+    display: inline-block;
+    color: #525252;
+    font-weight: 300;
+    font-size: 20px;
+    -webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    -moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+    border: solid 1px #DADADA;
+    font-family: "Abel", san-serif;
+    position: relative;
+    cursor: pointer;
+    padding-right:20px;
+    margin-bottom: 10px;
+    width: 300px;
+    margin-right: 0px;
+}
+
+.select-style select {
+    -webkit-appearance: none;
+    appearance:none;
+    width:905px;
+    background:none;
+    background:transparent;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:7px 10px;
+}
+
+.select-style span
+{
+    position: absolute;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: url("arrow.png") no-repeat;
+    top: 50%;
+    margin-top: -4px;
+    margin-bottom: 5px;
+}
+
+.tick text{
+    font-family: "Abel", san-serif;
+    font-size: 15px;
+}
+
+.title {
+    margin: auto;
+    width: 900px;
+    justify-content: space-between;
+}
+
+.subtitle {
+    margin: auto;
+    width: 900px;
+    justify-content: space-between;
+    height: 40px;
+    display: flex;
+}
+
+.toggle {
+    width: 250px;
+    display: flex;
+}
